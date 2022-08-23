@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Advanced Search</title>
+    <!--Link both mine and Bootstrap's css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/styles.css">
+
+    <!--Set viewport(Bootstrap)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="container-fluid text-right upper">
+
+        <input class="btn btn-outline-primary" type="button" value="Boogle Search" onclick="location.href='index.html'">
+    </div>
+
+    <!--Search Section-->
+    <div class="container-fluid text-center search-div">
+        <h1 class="boogle-head">Advanced Search</h1>
+        <form action="https://www.google.com/search">
+
+            <!--Bootstrap input field for "All these words"-->
+            <div class="input-group mb-3 mt-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">All these words: </span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default"
+                    aria-describedby="inputGroup-sizing-default" name="as_q">
+            </div>
+
+            <!--Bootstrap input field for "This exact word or phrase"-->
+            <div class="input-group mb-3 mt-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">This exact word or phrase: </span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default"
+                    aria-describedby="inputGroup-sizing-default" name="as_epq">
+            </div>
+
+            <!--Bootstrap input field for "Any of these words"-->
+            <div class="input-group mb-3 mt-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Any of these words: </span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default"
+                    aria-describedby="inputGroup-sizing-default" name="as_oq">
+            </div>
+
+
+            <!--Bootstrap input field for "None of these words"-->
+            <div class="input-group mb-3 mt-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">None of these words: </span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default"
+                    aria-describedby="inputGroup-sizing-default" name="as_eq">
+            </div>
+
+
+            <input class="btn btn-outline-primary mt-3" type="submit" value="Boogle It">
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

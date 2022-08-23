@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Image Search</title>
+    <!--Link both mine and Bootstrap's css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/styles.css">
+
+    <!--Set viewport(Bootstrap)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="container-fluid text-right upper">
+
+        <input class="btn btn-outline-primary" type="button" value="Boogle Search" onclick="location.href='index.html'">
+    </div>
+
+    <!--Search Section-->
+    <div class="container-fluid text-center search-div">
+        <h1 class="boogle-head">Image Search</h1>
+        <form action="https://www.google.com/search">
+            <input class="form-control" type="text" name="q">
+            <input class="btn btn-outline-primary mt-3" type="submit" value="Boogle It">
+
+            <!-- tbm stands for to be matched and the value isch stands for image search-->
+            <input type="hidden" name="tbm" value="isch" />
+        </form>
+    </div>
+    
+
+</body>
+
+</html>
